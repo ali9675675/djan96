@@ -1,0 +1,9 @@
+{% extends "movies/_base.html" %}
+
+<html lang="en">
+    {% block content %}
+    <h1>I like action movies</h1>
+    {% load static %}
+    <img style="width: 500px;" src="{% static "movies/img.jpg" %}" alt="About Me Picture">
+    {% endblock %}
+</html>

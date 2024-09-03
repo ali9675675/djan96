@@ -1,0 +1,12 @@
+{% extends "movies/_base.html" %}
+{% load humanize %}
+{% block content %}
+<div class="w-10/12 mx-auto">
+    <pi class="pb-6"><a href="{% url "home" %}" class="border border-gray-400 rounded px-4 py-2 hover:bg-gray-200">Go Back</a></pi>
+    <h1 class="text-3x1 font-semibold pb-4 underline underline-offset-8">{{posting.title}}</h1>
+    <p class="pb-2 text-x1">Director: {{ posting.director }}</p>
+    <p class="pb-2 font-semibold">Year: {{ posting.year }}</p>
+    <p class="pb-2 text-x1">Genre: {{ posting.genre }}</p>
+    <p>Description: {{ posting.description }}</p>
+</div>
+{% endblock content %}
